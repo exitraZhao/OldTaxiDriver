@@ -19,7 +19,11 @@ def query():
         #cqlString = "SELECT * from test"
         # #list = session.execute(cqlString)
         answerArray = analysis(list)
-        print  answerArray
+
+        for each in answerArray:
+            '''print with out enter'''
+            print each,
+
     except Exception, exce:
         print '!!!!!'
         print exce
