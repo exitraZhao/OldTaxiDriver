@@ -31,9 +31,7 @@ def query():
 def analysis(list):
     '''analysis data and return the target ID'''
     targetArray = []
-    number = 0
     for each in list:
-        number += 1
         rawList = transStringToRawList(each[6])
         for rawPoint in rawList:
             if rawPoint != "" and ifPointRight(rawPoint.split(',')):
